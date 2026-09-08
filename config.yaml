@@ -1,5 +1,5 @@
 baseURL: "https://www.adrienbouttier.com"
-languageCode: "fr-FR"
+languageCode: "en"
 title: "Adrien BOUTTIER"
 theme: hugo-theme
 
@@ -11,11 +11,10 @@ outputs:
   page:
     - "HTML"
     - "RSS"
-    
-Paginate: 3
+
+pagination:
+  pagerSize: 3
 enableRobotsTXT: true
-# disqusShortname: your-disqus-shortname
-# googleAnalytics: G-MEASUREMENT_ID
 
 markup:
   goldmark:
@@ -24,19 +23,11 @@ markup:
 
 params:
   title: "Adrien BOUTTIER"
-  # description: Text about my cool site
-  # staticPath: ""  # The path to serve the static files from
   favicon: "/logo.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
-  # Note the lack of "" in true, it should be of boolean type.
   useBootstrapCDN: false
-
-  # If you want to load dynamically responsive images from Cloudinary
-  # This requires your images to be uploaded + hosted on Cloudinary
-  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
-  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
 
   # Whether the fade animations on the home page will be enabled
   animate: true
@@ -53,7 +44,6 @@ params:
 
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     brandName: "Adrien BOUTTIER" # Brand name for the brand | default is the title variable
     disableSearch: true
     menus:
@@ -61,7 +51,6 @@ params:
       disableExperience: false
       disableEducation: false
       disableProjects: false
-      disableAchievements: false
       disableTechnologies: false
       disableContact: true
 
@@ -70,10 +59,8 @@ params:
     intro: "Hello, my name is"
     title: "Adrien BOUTTIER"
     aka: ">> adrnbttr"
-    avatar: "/me.jpeg"
-    subtitle: "Data Engineer"
-    content: ""
-    image: /me.jpeg
+    subtitle: "Data Engineer & Backend Engineer"
+    content: "I build data platforms — from ingestion and migration to BI and automation."
     button:
       enable: false
       name: "CV"
@@ -92,79 +79,19 @@ params:
       icon: fab fa-linkedin
 
   about:
-    enable: false
+    enable: true
     title: "About me"
     image: "/me.jpeg"
     content: |-
-      With over 15 years of experience as a Fullstack developer, my true passion has always centered on backend optimization, data management, and databases. As soon as the opportunity arose, I undertook a 3-month certified training to deepen my skills in data engineering. Since then, I've been consistently training, primarily through Udemy and Datacamp, showcasing my ongoing dedication to the world of Data.
+      I started in backend engineering — APIs, services, databases — and moved into data
+      engineering. Today I work where the two meet: **data platforms**.
 
-      Recently, I have further augmented my professional qualifications by achieving a B2 certification in the IELTS English language assessment, underscoring my ability to engage in an international work environment effectively.
+      That means owning the whole chain rather than one slice of it: modelling and
+      migrating data, building the pipelines that move it, provisioning the infrastructure
+      underneath, and delivering it to the business through BI and automation.
 
-      Currently involved in a project for my end-of-studies dissertation as part of an evening engineering course, I am actively seeking opportunities with a strong focus on Data. 
-
-  experience-old:
-    enable: true
-    title: "Expériences"
-    items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
-        featuredLink:
-          enable: true
-          name: "View the project"
-          url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
-      - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        info:
-          enable: true
-          content: I worked as a software developer for more than one year in Amazon.
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Junior Software Developer"
-        company: "Apple"
-        companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
-        info:
-          enable: false
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "UI/UX Designer"
-        company: "Netflix"
-        companyUrl: "https://example.com"
-        date: "June 2017 - Nov 2019"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+      Fifteen years of backend work is what makes the data half solid — a pipeline is a
+      production system before it is a dataset.
 
   experience:
     enable: true
@@ -367,133 +294,81 @@ params:
           name: "CNAM"
         date: "2011 - 2014"
 
-      - title: "IT Advanced Technician Certificate (Equivalent to French BTS)"
-        school:
-          name: "Lycée Douanier Rousseau - Laval"
-        date: "2006 - 2008"
-
-      - title: "Bank Advanced Technician Certificate (Equivalent to French BTS)"
-        school:
-          name: "CFPB - Lyon"
-        date: "2004 - 2005"
-
   technologies:
     enable: true
     items:
       - title: Languages
         items:
           - title: Python
-          - title: JavaScript
+          - title: SQL
           - title: TypeScript
-          - title: .Net C#
+          - title: JavaScript
+          - title: R
 
-      - title: Framework
+      - title: Backend
         items:
           - title: Node.JS
           - title: Nest.JS
-          - title: Flask / FastAPI
-          - title: Vue.JS
-          - title: React.JS
-          - title: "..."
+          - title: FastAPI / Flask
+          - title: REST & GraphQL
 
       - title: Data Engineering
         items:
-          - title: Python
+          - title: dbt
           - title: Spark
-          - title: Airflow
-          - title: RabbitMQ
-          - title: SQL Query
-          - title: Database design
-          - title: DataBrick
           - title: Kafka
+          - title: RabbitMQ
+          - title: Data modeling
+          - title: Data migration
+
+      - title: BI & Automation
+        items:
           - title: Power BI
+          - title: n8n
 
       - title: Databases
         items:
           - title: PostgreSQL
           - title: MongoDB
           - title: SQL Server
-          - title: MySQL
-          - title: SQlite
           - title: ElasticSearch
 
-      - title: Local environnment
-        items:
-          - title: NeoVim / NvChad / Tmux 
-          - title: Linux
-          - title: Bépo Keyboard
-          - title: MacOS
-          - title: Visual Studio Code
-          - title: Windows
-
-      - title: DevOps
+      - title: Cloud & Infrastructure
         items:
           - title: Google Cloud Platform
-          - title: Scalingo
-          - title: Docker
-          - title: Ansible
-          - title: Kubernetes
+          - title: Scaleway
           - title: Terraform
-          - title: Debian
+          - title: Ansible
+          - title: Docker
+          - title: Kubernetes
+          - title: Linux
 
       - title: CI / CD
         items:
           - title: GitHub Actions
-          - title: Circle CI
           - title: GitLab CI
-
-      - title: API
-        items:
-          - title: REST
-          - title: GraphQL          
+          - title: Circle CI
 
   projects:
-    enable: false
+    enable: true
+    title: "Projects"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+      - title: Remote Data Workstation
+        content: >-
+          Infrastructure as code to provision a secure, reproducible data-engineering
+          workstation co-located with the database. Heavy work stays next to the data
+          instead of crossing the internet, and the laptop becomes a thin client.
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+          - "Ansible"
+          - "Terraform"
+          - "GCP"
+          - "Infrastructure as Code"
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
+          name: "View on GitHub"
+          link: "https://github.com/adrnbttr/remote-data-workstation"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
-
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: "https://github.com/adrnbttr/remote-data-workstation"
 
   contact:
     title: Contact
@@ -504,8 +379,7 @@ params:
   footer:
     socialNetworks:
       github: https://github.com/adrnbttr
-      linkedin: https://www.linkedin.com/in/adrien-bouttier
-      # twitter: https://twitter.com
+      linkedin: https://www.linkedin.com/in/adrien-bouttier/
 
   listPages:
     disableFeaturedImage: false
