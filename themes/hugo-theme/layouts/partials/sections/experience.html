@@ -1,0 +1,56 @@
+{{ if .Site.Params.experience.enable | default false }}
+<section id="experience" class="py-3">
+  <div class="container">
+    <h3 class="text-center py-5">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+    <div class="row justify-content-center py-3">
+      {{ range $index, $element := .Site.Params.experience.items }}
+      <div class="col-12 p-0">
+        <div class="row row align-items-center justify-content-center m-1 mb-4">
+          <div class="col-md-10">
+            <div class="card">
+              <div class="card-body">
+                <div class="float-end">
+                  <small>{{ .date }}</small>
+                </div>
+                <h5 class="card-title">{{ .title }}</h5>
+
+                {{ .company.name }}
+
+                {{ if .localisation }}
+                <div class="py-1">
+                  <i>
+                    <small>{{ .localisation }}</small>
+                  </i>
+                </div>
+                {{ end }}
+                {{ if .content }}
+                <div class="py-1">
+                  <div>Context:</div>
+                  <div class="py-1 experience-content">
+                    {{ .content | markdownify}}
+                  </div>
+                </div>
+                {{ end }}
+
+                {{ if .items }}
+                <div class="py-1">
+                  <div>Skills:</div>
+                  <div class="items">
+                    {{ range .items }}
+                    <li class="item">
+                      {{ . }}
+                    </li>
+                    {{ end }}
+                  </div>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
