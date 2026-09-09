@@ -190,7 +190,7 @@ header .navbar.animate {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
 }
 
 #hero a.btn.resume {
@@ -199,8 +199,12 @@ header .navbar.animate {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0.9rem;
+    gap: 0.6rem;
+    /* 48px minimum keeps the icon-only buttons a comfortable touch target */
+    min-width: 48px;
+    min-height: 48px;
+    padding: 0.7rem 1rem;
+    font-size: 1.35rem;
 }
 
 #hero a.btn:focus {
