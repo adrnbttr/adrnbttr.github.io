@@ -77,6 +77,10 @@ header .navbar.animate {
     max-width: 100%;
     display: grid;
     color: white;
+    /* Same colour Vanta paints on its canvas (backgroundColor: 0x02020f).
+       Without it, a browser that cannot run WebGL leaves the section on the
+       page's light background and the white text becomes unreadable. */
+    background-color: #02020f;
 }
 
 #hero .container {
