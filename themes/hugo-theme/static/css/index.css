@@ -572,14 +572,16 @@ header .navbar.animate {
 }
 
 #technologies .tech-content {
-    padding: 20px 0px;
+    /* Left padding holds the markers, so a label that still wraps keeps its
+       second line aligned with the first instead of running under the bullet. */
+    padding: 20px 0px 20px 1.1rem;
     margin-bottom: 0;
 }
 
 #technologies .tech-item {
     font-weight: 700;
-    padding: 5px;
-    list-style: disc inside;
+    padding: 5px 0;
+    list-style: disc outside;
 }
 
 #technologies .tech-item img {
