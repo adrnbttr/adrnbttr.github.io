@@ -276,10 +276,12 @@ params:
     title: "Education"
     index: false
     items:
-      - title: "Software Engineer"
+      - title: "Engineering Degree in Computer Science"
         school:
-          name: "EICNAM"
+          name: "EICNAM — École d'Ingénieur du Cnam"
+          url: "https://www.cnam.fr"
         date: "2014 - 2024"
+        content: "French *Diplôme d'Ingénieur*, RNCP level 7 (Bac+5). Evening classes and distance learning, earned while working full time."
 
       - title: "Data Engineer"
         school:
@@ -292,10 +294,12 @@ params:
           name: "British Council"
         date: "2023"
 
-      - title: "Bachelor's Degree in Computer Science (Equivalent to French Licence)"
+      - title: "Bachelor's Degree in Computer Science"
         school:
-          name: "CNAM"
+          name: "Cnam"
+          url: "https://www.cnam.fr"
         date: "2011 - 2014"
+        content: "French *Licence* equivalent."
 
   technologies:
     enable: true
