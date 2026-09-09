@@ -10,13 +10,13 @@
             <h5 class="card-title bg-transparent">{{ .title }}</h5>
             <div class="card-text secondary-font">
               {{ .content }}
-              <div class="tech-content">
+              <ul class="tech-content">
                 {{ range .items }}
                 <li class="tech-item">
                   {{ .title }}
                 </li>
                 {{ end }}
-              </div>
+              </ul>
             </div>
           </div>
         </div>

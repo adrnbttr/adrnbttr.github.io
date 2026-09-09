@@ -468,12 +468,16 @@ header .navbar.animate {
 
 #experience .item {
   margin-left: 15px;
-  list-style:circle;
+  /* The items are flex children, so an "outside" marker is painted outside the
+     item's box and lands on top of the previous item. Keep it inside. */
+  list-style: circle inside;
 }
 
 #experience .items {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 /* achievements */
@@ -564,11 +568,13 @@ header .navbar.animate {
 
 #technologies .tech-content {
     padding: 20px 0px;
+    margin-bottom: 0;
 }
 
 #technologies .tech-item {
     font-weight: 700;
     padding: 5px;
+    list-style: disc inside;
 }
 
 #technologies .tech-item img {
