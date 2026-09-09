@@ -104,26 +104,29 @@ params:
         date: "Sept 2023 - Now"
         localisation: "Remote"
         content: |-
-            - Optimize database design and enhance data import processes for efficiency and accuracy.
-            - Improve data pipelines, algorithms, and REST API, and revamp the Vue.js frontend for optimal performance.
+            - Build and operate the data platform: ingestion, modelling, and the pipelines that feed it.
+            - Run data migrations end to end, from schema design to reconciliation.
+            - Optimize database design and data import processes for efficiency and accuracy.
             - Implement event-driven architecture to streamline real-time data processing.
-            - Drive technical strategy, aligning with business objectives and maintaining high code and data quality standards.
-            - Facilitate cross-functional collaboration to integrate tech and data insights into business strategies.
+            - Provision and maintain the infrastructure as code with Terraform on GCP and Scaleway.
+            - Drive technical strategy and data quality standards, aligned with business objectives and shared across teams.
         items:
+          - Data platform
+          - Data migration
           - Python
           - Node.JS
-          - Vue2.JS
-          - Management
           - Database design
           - SQL / NoSQL Query
-          - NLP (Natural Language Processing)
           - Event-driven architectures
-          - MongoDB
+          - NLP (Natural Language Processing)
           - PostgreSQL
+          - MongoDB
           - Terraform
-          - CI / CD
-          - Docker
           - Google Cloud Platform
+          - Scaleway
+          - Docker
+          - CI / CD
+          - Management
 
       - title: "Lead Backend Engineer"
         company:
