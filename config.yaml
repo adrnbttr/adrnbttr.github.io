@@ -23,7 +23,12 @@ markup:
 
 params:
   title: "Adrien BOUTTIER"
+  description: "Senior data and backend engineer. I build data platforms: ingestion, migration, pipelines, infrastructure, BI and automation."
   favicon: "/logo.png"
+
+  # Preview card used by Open Graph and Twitter cards when the site is shared
+  images:
+    - "/og-cover.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.

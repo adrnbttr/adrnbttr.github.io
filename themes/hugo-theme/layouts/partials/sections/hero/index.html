@@ -31,13 +31,13 @@
             {{ end }}
             {{ if .Site.Params.hero.github.enable }}
             <a href="{{ .Site.Params.hero.github.url }}" class="btn resume" target="_blank">
-              <i class="{{ .Site.Params.hero.github.icon }}"></i>
+              {{ partial "icon.html" .Site.Params.hero.github.icon }}
               {{ .Site.Params.hero.github.name }}
             </a>
             {{ end }}
             {{ if .Site.Params.hero.linkedin.enable }}
             <a href="{{ .Site.Params.hero.linkedin.url }}" class="btn resume" target="_blank">
-              <i class="{{ .Site.Params.hero.linkedin.icon }}"></i>
+              {{ partial "icon.html" .Site.Params.hero.linkedin.icon }}
               {{ .Site.Params.hero.linkedin.name }}
             </a>
             {{ end }}
