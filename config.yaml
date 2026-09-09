@@ -299,7 +299,7 @@ params:
           name: "Cnam"
           url: "https://www.cnam.fr"
         date: "2011 - 2014"
-        content: "French *Licence* equivalent."
+        content: "French *Licence* equivalent. Evening classes, alongside full-time work."
 
   technologies:
     enable: true
