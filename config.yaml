@@ -59,7 +59,7 @@ params:
     intro: "Hello, my name is"
     title: "Adrien BOUTTIER"
     aka: ">> adrnbttr"
-    subtitle: "Data Engineer & Backend Engineer"
+    subtitle: "Senior Data & Backend Engineer"
     content: "I build data platforms — from ingestion and migration to BI and automation."
     button:
       enable: false
@@ -90,7 +90,7 @@ params:
       migrating data, building the pipelines that move it, provisioning the infrastructure
       underneath, and delivering it to the business through BI and automation.
 
-      Fifteen years of backend work is what makes the data half solid — a pipeline is a
+      Eighteen years of backend work is what makes the data half solid — a pipeline is a
       production system before it is a dataset.
 
   experience:
