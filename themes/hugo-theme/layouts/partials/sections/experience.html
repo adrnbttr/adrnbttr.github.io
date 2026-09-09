@@ -35,13 +35,11 @@
                 {{ if .items }}
                 <div class="py-1">
                   <div>Skills:</div>
-                  <ul class="items">
+                  <div class="items">
                     {{ range .items }}
-                    <li class="item">
-                      {{ . }}
-                    </li>
+                    <span class="badge">{{ . }}</span>
                     {{ end }}
-                  </ul>
+                  </div>
                 </div>
                 {{ end }}
               </div>

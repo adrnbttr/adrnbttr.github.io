@@ -116,7 +116,7 @@ params:
           - Python
           - Node.JS
           - Database design
-          - SQL / NoSQL Query
+          - SQL / NoSQL
           - Event-driven architectures
           - NLP (Natural Language Processing)
           - PostgreSQL
@@ -142,8 +142,8 @@ params:
           - TypeScript
           - Node.JS
           - MongoDB
-          - API Rest & GraphQL
-          - SQL Query
+          - REST & GraphQL API
+          - SQL
           - Database design
           - CI / CD
           - Docker
@@ -165,8 +165,8 @@ params:
         items:
           - Node.JS
           - MongoDB
-          - API Rest
-          - SQL Query
+          - REST API
+          - SQL
           - Database design
           - CI / CD
           - Docker
@@ -178,7 +178,7 @@ params:
           - Google Cloud Platform
           - Unit & functional testing
           - React.JS
-          - Oauth2
+          - OAuth2
 
       - title: "Senior Backend Engineer"
         company:
@@ -191,8 +191,8 @@ params:
         items:
           - Node.JS
           - MongoDB
-          - API Rest
-          - SQL Query
+          - REST API
+          - SQL
           - Database design
           - Docker
           - Microservices
@@ -200,7 +200,7 @@ params:
           - RabbitMQ
           - Google Cloud Platform
           - Unit & functional testing
-          - Oauth2
+          - OAuth2
 
       - title: "Lead Full-Stack Engineer"
         company:
@@ -212,21 +212,21 @@ params:
             - Database migration from MySQL to PostgreSQL
             - Securing the API with an OAuth2 layer
             - Creation and optimization of SQL queries
-            - Creating an interface for making ElasticSearch queries
+            - Creating an interface for making Elasticsearch queries
             - Development of NodeJS microservices
             - Client relations
         items:
           - Node.JS
           - PostgreSQL
-          - API Rest
-          - SQL Query
+          - REST API
+          - SQL
           - Database design
           - CI / CD
           - Docker
-          - Framework Symfony
+          - Symfony
           - Unit & functional testing
           - React.JS
-          - Elastics Search
+          - Elasticsearch
           - Event-driven architectures
 
       - title: "Web Developer"
@@ -235,9 +235,9 @@ params:
         date: "Jan. 2014 - May 2014"
         localisation: "Remote"
         items:
-          - Symfony framework
+          - Symfony
           - Database design
-          - SQL Query
+          - SQL
           - MySQL
           - Unit & functional testing
 
@@ -258,7 +258,7 @@ params:
           - Database design
           - E-commerce
           - Microsoft SQL Server
-          - SQL Query
+          - SQL
 
       - title: ".Net Developer"
         company:
@@ -269,7 +269,7 @@ params:
           - C#
           - Microsoft SQL Server
           - Database design
-          - SQL Query
+          - SQL
 
   education:
     enable: true
@@ -314,15 +314,22 @@ params:
           - title: Nest.JS
           - title: FastAPI / Flask
           - title: REST & GraphQL
+          - title: Microservices
+          - title: OAuth2
 
       - title: Data Engineering
         items:
           - title: dbt
-          - title: Spark
-          - title: Kafka
-          - title: RabbitMQ
+          - title: BigQuery
           - title: Data modeling
           - title: Data migration
+
+      - title: Messaging & Events
+        items:
+          - title: Pub/Sub
+          - title: RabbitMQ
+          - title: BullMQ
+          - title: Event-driven architecture
 
       - title: BI & Automation
         items:
@@ -334,7 +341,6 @@ params:
           - title: PostgreSQL
           - title: MongoDB
           - title: SQL Server
-          - title: ElasticSearch
 
       - title: Cloud & Infrastructure
         items:
