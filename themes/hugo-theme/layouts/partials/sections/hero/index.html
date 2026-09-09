@@ -21,7 +21,7 @@
           <!--<div id="typewriter"></div>-->
         </p>
         <div class="row">
-          <div class="col-auto h-100">
+          <div class="col-auto h-100 hero-actions">
             {{ if .Site.Params.hero.button.enable }}
             <a href="{{ .Site.Params.hero.button.url }}" class="btn resume" {{ cond
               .Site.Params.hero.button.download "download" "" }} {{ if .Site.Params.hero.button.newPage | default true
@@ -30,13 +30,13 @@
             </a>
             {{ end }}
             {{ if .Site.Params.hero.github.enable }}
-            <a href="{{ .Site.Params.hero.github.url }}" class="btn resume" target="_blank">
+            <a href="{{ .Site.Params.hero.github.url }}" class="btn resume" target="_blank" aria-label="GitHub">
               {{ partial "icon.html" .Site.Params.hero.github.icon }}
               {{ .Site.Params.hero.github.name }}
             </a>
             {{ end }}
             {{ if .Site.Params.hero.linkedin.enable }}
-            <a href="{{ .Site.Params.hero.linkedin.url }}" class="btn resume" target="_blank">
+            <a href="{{ .Site.Params.hero.linkedin.url }}" class="btn resume" target="_blank" aria-label="LinkedIn">
               {{ partial "icon.html" .Site.Params.hero.linkedin.icon }}
               {{ .Site.Params.hero.linkedin.name }}
             </a>

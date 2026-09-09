@@ -184,9 +184,23 @@ header .navbar.animate {
     transition: none;
 }
 
+/* The buttons used to be spaced only by the whitespace between the tags, which
+   the minifier strips — so they ended up touching. Space them explicitly. */
+#hero .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+}
+
 #hero a.btn.resume {
     background-color: var(--secondary-color) !important;
-    color: white
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.9rem;
 }
 
 #hero a.btn:focus {
